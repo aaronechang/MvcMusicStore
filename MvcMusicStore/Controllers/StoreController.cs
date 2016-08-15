@@ -15,15 +15,15 @@ namespace MvcMusicStore.Controllers
         }
 
         // GET: /Store/Browse
-        public string Browse()
+        public string Browse(string id)
         {
-            return "Hello from Store.Browse()";
+            return string.Format("Hello from Store.Browse({0})", id);
         }
 
-        // GET: /Store/Details
-        public string Details()
+        // GET: /Store/Details/id
+        public string Details(int id)
         {
-            return "Hello from Store.Details()";
+            return string.Format("Hello from Store.Details[{0}]", id);
         }
     }
 }
